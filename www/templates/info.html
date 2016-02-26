@@ -3,15 +3,11 @@
 	 <ion-nav-buttons side="left">
       <button class="button button-icon ion-heart" ng-click="addFavorites(info);">Save</button>
     </ion-nav-buttons>
-	
 	 <ion-nav-buttons side="right">
       <button class="button button-icon ion-close-circled" ng-click="pause();resetPlayer()">Close</button>
-    </ion-nav-buttons>
-	
+    </ion-nav-buttons>	
 	<content >
 	<!-- <ion-content  > -->
-	
-
 		<div class="list card animate-if"   ng-if="loaded">
 			<div class="item item-avatar">
 				<img class="track__img" ng-src="{{info.user.avatar_url }}">
@@ -34,10 +30,8 @@
 					  	<span ng-if="!played" class="ion-play"></span>
 					  	<span ng-if="played" class="ion-pause"></span> -->
 					  </button>
-
 <!--  --> 	
                      <!--   {{currentTime}} -->
-
 					<!-- <button id="musicone-info_sub" class="button button-icon ion-heart" ng-click="clickFavorite(info)"></button> -->
 <!-- 
 			          <progress class="progress red" ng-click="seek($event)"  ng-value="currentTime /  duration || 0">
@@ -59,6 +53,3 @@
 		</div>
 	</ion-content>
 </ion-view>
-
-
-
