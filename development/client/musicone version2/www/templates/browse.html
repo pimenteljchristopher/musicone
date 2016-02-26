@@ -1,0 +1,16 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <!-- tag buttons -->
+    <div class="browse" ng-if='!showList'>
+      <button class="tag-item button button-light" ng-repeat="tag in tags"
+          ui-sref="app.browse({tag: tag})">{{tag}}</button>
+    </div>
+
+    <!-- result list (tracks) -->
+    <div ng-if='showList'>
+      <sc-result-list results="results" load-more="loadMore()"></sc-result-list>
+    </div>
+    
+   
+  </ion-content>
+</ion-view>

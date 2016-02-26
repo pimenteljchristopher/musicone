@@ -1,0 +1,19 @@
+<ion-nav-view>
+  <ion-view view-title="Forget Password"  >
+     <ion-content scroll="false" >  
+        <div class="signforget">
+        <h2>Forget your Password?</h2>
+              <label class="item item-icon-left">
+                 <i class="icon ion-email"></i> 
+                <input type="email" ng-model="loginData.email" autofocus placeholder="Email">
+              </label>
+               <button class="button button-block button-forget" ng-click="forgetSend(loginData)">Submit</button>
+               <div class="button-forget" ui-sref="signhome">Cancel</div>
+        </div>
+    </ion-content>
+  </ion-view>
+</ion-nav-view>
+
+
+
+

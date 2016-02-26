@@ -1,0 +1,36 @@
+<ion-view view-title="Favorites">
+ <ion-nav-buttons side="right">
+      <button class="button button-icon "   ng-click="data.showDelete = !data.showDelete;editFavorites(cards)">
+         <span ng-hide="data.showDelete">Edit</span>
+         <span ng-show="data.showDelete" ng-click="">Save</span>
+      </button>
+    </ion-nav-buttons>
+  <ion-content  class="musicone-menuTab">
+   <!-- <ion-list  class="list" show-delete="data.showDelete">
+    <ion-item class="item item-avatar" ng-repeat=" card in cards track by $index " class="">  
+      <img ng-src="{{card.artwork_url}}"/>
+    		<h2>{{card.title}}</h2>
+    		  <ion-delete-button class="ion-minus-circled" 
+                             ng-click="onItemDelete(item)">
+          </ion-delete-button>
+       </ion-item>
+    </ion-list> -->
+     <ion-list class="list" show-delete="data.showDelete">
+                <ion-item  ng-repeat="card in cards track by $index"  class="item item-avatar item-remove-animate"
+                plangular="{{card.permalink_url}}" ng-click="playPause()">
+            <!--     ng-click="playerAction($index);playPause($index)" -->
+    
+                    <img ng-src="{{card.artwork_url}}"/>
+                    <h2>{{card.title}}</h2> 
+                    <div>
+                        <ion-spinner icon="lines" ng-show="player.playing == track.src"></ion-spinner>
+                        
+                     <progress ng-value="currentTime / duration || 0" ng-click="seek($event)"></progress>
+                    </div>
+                     <ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(card)"></ion-delete-button>
+                   
+                </ion-item>
+        </ion-list>
+<!--    <button ng-click="deleteAll()">Delete</button> -->
+  </ion-content>
+</ion-view>

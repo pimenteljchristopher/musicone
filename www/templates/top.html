@@ -1,0 +1,33 @@
+<!-- <ion-view view-title="Top List"  plangular="https://soundcloud.com/user887792035/sets/musicone2015"> -->
+<ion-view view-title="Top List"  plangular="https://soundcloud.com/user887792035/sets/musicone2015" >
+ <ion-header-bar>
+    <button  class="button button-icon button-dark icon ion-navicon"  menu-toggle="left"></button>
+</ion-header-bar>
+   <ion-content class="musicone-menuTab" >
+        <ion-list >
+                <ion-item ng-repeat="track in tracks" class="item item-avatar" plangular="{{track.permalink_url}}" ng-click="playPause($)">
+            <!--     ng-click="playerAction($index);playPause($index)" -->
+                <img ng-src="{{track.artwork_url}}"/>
+                    <h2>{{track.title}}</h2>
+                     <ion-spinner icon="lines" ng-show="player.playing == track.src"></ion-spinner>
+                    <progress ng-value="currentTime / duration || 0" ng-click="seek($event)"></progress>
+                </ion-item>
+        </ion-list>
+  </ion-content>
+  <!-- <div class="bar bar-footer bar-calm musicone-top_player" > <div>
+        <progress  class="range-calm" ng-value="currentTime / duration || 0"></progress><div><span>
+         <button id="musicone-top_play" ng-click="previous()" class="button button-icon ion-skip-backward"> </button> 
+         <button id="musicone-top_play" ng-click="playerAction(change);playPause(change);" class="button button-icon" >
+           <span ng-if="!played" class="ion-play"></span>
+           <span ng-if="played" class="ion-pause"></span>
+         </button> 
+         <button id="musicone-top_play"ng-click="next()" class="button button-icon ion-skip-forward"></button> 
+           <span id="musicone-time" ng-bind="currentTime | secondsToDateTime | date:'mm:ss' "></span>
+         </span></div></div></div> -->
+  <!-- <player player= played   secondsToDateTime=secondsToDateTime></player> -->
+</ion-view>
+
+
+
+
+

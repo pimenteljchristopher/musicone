@@ -1,0 +1,64 @@
+<ion-view   id="musicone-info"  hide-back-button="true" plangular="{{info.permalink_url}}"    >
+	<!-- titlebar -->
+	 <ion-nav-buttons side="left">
+      <button class="button button-icon ion-heart" ng-click="addFavorites(info);">Save</button>
+    </ion-nav-buttons>
+	
+	 <ion-nav-buttons side="right">
+      <button class="button button-icon ion-close-circled" ng-click="pause();resetPlayer()">Close</button>
+    </ion-nav-buttons>
+	
+	<content >
+	<!-- <ion-content  > -->
+	
+
+		<div class="list card animate-if"   ng-if="loaded">
+			<div class="item item-avatar">
+				<img class="track__img" ng-src="{{info.user.avatar_url }}">
+				<h2>{{info.title}}</h2>
+				<p>{{info.user.username}}</p>
+				<h6>{{info.user.permalink_url}}</h6>
+			</div>
+			<div class="item item-body">
+				<img class="full-image" ng-src="{{info.big_artwork}}"></img>
+                <div class="musicone-waveform">			
+				 <progress ng-value="currentTime / duration || 0" ng-click="seek($event)"></progress>
+				</div>
+			   <span  id="musicone-time" ng-bind="currentTime | secondsToDateTime | date:'mm:ss'"></span>
+			   <!-- <small id="musicone-time">{{ currentTime | prettyTime }} | {{ duration | prettyTime }}</small> -->
+				 <div id="musicone-info_player" >
+	              <!--   <button id="musicone-info_sub"class="button button-icon ion-refresh" ng-click="showAlert()"></button> -->
+	              	 <ion-spinner icon="lines" ng-show="player.playing == track.src"></ion-spinner>
+					  <button id="musicone-info_play" class="button button-icon" ng-class="{'ion-play' : (player.playing != track.src) , 'ion-stop' : (player.playing == track.src)}" ng-click="playPause()">
+					  	<!-- 
+					  	<span ng-if="!played" class="ion-play"></span>
+					  	<span ng-if="played" class="ion-pause"></span> -->
+					  </button>
+
+<!--  --> 	
+                     <!--   {{currentTime}} -->
+
+					<!-- <button id="musicone-info_sub" class="button button-icon ion-heart" ng-click="clickFavorite(info)"></button> -->
+<!-- 
+			          <progress class="progress red" ng-click="seek($event)"  ng-value="currentTime /  duration || 0">
+						   {{ currentTime / duration }}
+						</progress>
+						{{currentTime}} -->
+			 	</div>
+			</div>
+			<div class="item tabs tabs-secondary tabs-icon-left">
+				<span class="tab-item" href="#" >
+					<i class="icon ion-code-download"></i>
+					Coming Soon
+				</span>
+				<span class="tab-item" href="#" style="color:red;">
+					<i class="icon ion-clock"></i>
+					Duration {{info.proper_time}}
+				</span>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+
+
+

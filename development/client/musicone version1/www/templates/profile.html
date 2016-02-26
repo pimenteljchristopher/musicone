@@ -1,0 +1,79 @@
+<ion-view view-title="{{info.username}}">
+   <ion-header-bar>  
+      <button class="button button-icon button-dark icon ion-navicon"  menu-toggle="left"></button>
+  </ion-header-bar>
+   <ion-nav-buttons side="right">
+      <button class="button button-icon "   ng-click="data.showDelete = !data.showDelete;save(info.objectId, info)">
+         <span ng-hide="data.showDelete">Edit</span>
+         <span ng-show="data.showDelete" ng-click="">Save</span>
+      </button>
+    </ion-nav-buttons>
+   <ion-content >
+    <div class="ProfilePage">
+          <div id="profile-bg"></div>
+      <div id="content">
+        <div id="profile-info">
+             <img id="profile-image" src="img/person.gif">
+          <i   ng-if="data.showDelete"  class="icon button-icon ion-camera"></i>
+          <h3 id="profile-name"> {{info.name}}</h3>
+          <span id="profile-description">
+          <p ng-hide="data.showDelete">{{info.post}}</p>
+           <input ng-show="data.showDelete"  type="text" ng-model="info.post"/>
+          </span>
+        </div>
+           <div class="item">
+                <h2>{{user.name}}</h2>
+                <p>{{user.city}}</p>
+            </div>
+            <div class="item item-body">
+                <img src="http://graph.facebook.com/{{user.id}}/picture?width=270&height=270"/>
+            </div>
+           <label class="item item-icon-left">
+             <i class="icon ">ID</i> 
+             {{info.objectId}}
+          </label>
+
+          <label class="item item-icon-left">
+             <i class="icon ion-email"></i> 
+             {{info.email}}
+          </label>
+          <label class="item item-icon-left">
+             <i class="icon " ng-class="{'ion-female':info.gender == 'Female', 'ion-male': info.gender=='Male' }"></i> 
+             {{info.gender}}
+          </label>
+              <label class="item item-icon-left">
+             <i class="icon fa fa-birthday-cake" ></i> 
+             {{info.birthdate}}
+          </label>     
+           <label  class="item  item-icon-left">
+            <i class="icon fa fa-mobile "></i> 
+              <span ng-hide="data.showDelete">{{info.mobile}}</span> 
+              <span ng-if="info.mobile == undefined "><i class=" ion-plus-round"></i>Add Mobile Number</span>
+              <input ng-show="data.showDelete"  type="text" ng-model="info.mobile"/>
+          </label>
+             <label  class="item  item-icon-left">
+            <i class="icon fa fa-heartbeat "></i> 
+              <span ng-hide="data.showDelete">{{info.status}}</span>
+              <span ng-if="info.status  == undefined "><i class=" ion-plus-round"></i>Add Status</span>
+              <input ng-show="data.showDelete"  type="text" ng-model="info.status"/>
+          </label>
+           <label  class="item  item-icon-left">
+            <i class="icon fa fa-flag "></i> 
+              <span ng-hide="data.showDelete">{{info.country}}</span>
+              <span ng-if="info.country == undefined "><i class=" ion-plus-round"></i>Add Country</span>
+              <input ng-show="data.showDelete"  type="text" ng-model="info.country"/>
+          </label>
+           <label  class="item  item-icon-left">
+            <i class="icon fa fa-road "></i> 
+            <span ng-hide="data.showDelete"> {{info.address}} </span>
+             <span ng-if="info.address == undefined "><i class=" ion-plus-round"></i>Add Address</span>
+             <input ng-show="data.showDelete"  type="text" ng-model="info.address"/>
+          </label>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+
+
+

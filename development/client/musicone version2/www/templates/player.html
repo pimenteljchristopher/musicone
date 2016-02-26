@@ -1,0 +1,25 @@
+<ion-modal-view style="height:50px !important;min-height:150px;">
+  
+  
+  <div class="bar bar-footer bar-calm musicone-top_player" plangular="https://soundcloud.com/user887792035/sets/musicone2015">
+    
+        <div>
+        {{currentTime / duration}}
+          {{playerData.title}}
+          <progress  class="range-calm" ng-click="seek($event)" ng-value="currentTime / duration || 0"></progress>
+        <button ng-click="previous()">Previous</button>
+            <button ng-click="next()">Next</button>
+          <button id="musicone-top_play"
+            ng-click="playerAction(change);playPause(change)"
+            class="button button-icon"
+            ng-class="{'ion-play' : ( false ==  played) , 'ion-stop' : (true == played)}">          
+          </button> 
+
+          <button id="musicone-top_play"
+            ng-click="pause(change);closePlayer()"
+            class="button button-icon ion-close-circled">          
+          </button> 
+        </div>
+     
+   </div>
+</ion-modal-view>

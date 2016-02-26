@@ -1,0 +1,24 @@
+<ion-view  hide-nav-bar="true" >
+ <ion-header-bar>
+  
+    <button class="button button-icon button-dark icon ion-navicon"  menu-toggle="left"></button>
+
+     <form ng-submit="search(this)" class=" item-input-inset musicone-searchbar" >
+	    <label class="item-input-wrapper" >
+	        <i class="icon ion-ios-search placeholder-icon"></i>
+	        <input type="search"  placeholder="Search" name="query" ng-model="query">
+	         <button class="button-small button-clear  ion-close-round"></button>
+	    </label>
+	   
+    </form>
+</ion-header-bar>
+ <ion-content  class="musicone-menuTab" has-header="true">
+		<sc-result-list results="results" load-more="loadMore()"></sc-result-list>
+
+  <div class="card" ng-hide="results != null" >
+      <div class="item item-text-wrap">
+         Start searching your favorite artist now.
+      </div>
+    </div>
+ </ion-content>
+</ion-view>

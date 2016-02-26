@@ -1,0 +1,26 @@
+<ion-nav-view>
+  <ion-view view-title="Login" >
+     <ion-content scroll="false" >
+     <form  class="signin" name="sigin">
+
+            <label class="item item-icon-left">
+               <i class="icon ion-person"></i> 
+              <input type="text" ng-model="loginData.username" autofocus placeholder="Username" required>
+            </label>
+              <label class="item item-icon-left">
+               <i class="icon ion-locked"></i> 
+              <input type="password" ng-model="loginData.password"  placeholder="Password" required>
+            </label>
+              <button type="submit"class="button button-block button-login"   ng-disabled="sigin.$invalid" ng-click="doLogin()">Sign In</button>
+
+               <div class="button-forget" ui-sref="forget">Forgot your Password?</div>
+               <div class="button-forget" ui-sref="signhome">Cancel</div>
+
+     </form>
+     </ion-content>
+  </ion-view>
+</ion-nav-view>
+
+
+
+

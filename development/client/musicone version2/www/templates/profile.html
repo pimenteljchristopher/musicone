@@ -1,0 +1,68 @@
+<ion-view view-title="{{info.first_name}}">
+   <ion-header-bar>  
+      <button class="button button-icon button-dark icon ion-navicon"  menu-toggle="left"></button>
+  </ion-header-bar>
+   <ion-nav-buttons side="right">
+      <button class="button button-icon "   ng-click="data.showDelete = !data.showDelete;save(info.objectId, info)">
+         <span ng-hide="data.showDelete">Edit</span>
+         <span ng-show="data.showDelete" ng-click="">Save</span>
+      </button>
+    </ion-nav-buttons>
+   <ion-content >
+    <div class="ProfilePage">
+          <div id="profile-bg"></div>
+      <div id="content">
+        <div id="profile-info">
+             <img id="profile-image" ng-src="http://graph.facebook.com/{{info.id}}/picture?width=270&height=270">
+         
+          <h3 id="profile-name"> <span ng-bind="info.name"></span></h3>
+          <p ng-bind="info.education"></p>
+          <span id="profile-description" ng-if="info.post">
+               <span ng-bind="info.post"></span>
+          </span>
+        </div>
+           <label class="item item-icon-left">
+             <i class="icon ">ID</i> 
+             <span ng-bind="info.id"></span>
+          </label>
+
+          <label class="item item-icon-left">
+             <i class="icon ion-email"></i> 
+             <span ng-bind="info.email"></span>
+          </label>
+          <label class="item item-icon-left" ng-if="info.gender">
+             <i class="icon " ng-class="{'ion-female':info.gender == 'female', 'ion-male': info.gender=='male' }"></i> 
+             <span ng-bind="info.gender"></span>
+          </label>
+            <label class="item item-icon-left" ng-if="info.birthday">
+             <i class="icon fa fa-birthday-cake" ></i> 
+             <span ng-bind="info.birthday"></span>
+          </label>     
+           <label  class="item  item-icon-left" ng-if="info.mobile">
+            <i class="icon fa fa-mobile "></i> 
+              <span ng-bind="info.mobile"></span> 
+             
+          </label>
+             <label  class="item  item-icon-left" ng-if="info.status">
+            <i class="icon fa fa-heartbeat "></i> 
+              <span ng-bind="info.status"></span>
+            
+          </label>
+           <label  class="item  item-icon-left" ng-if="info.country">
+            <i class="icon fa fa-flag "></i> 
+              <span ng-bind="info.country"></span>
+ 
+          </label>
+           <label  class="item  item-icon-left" ng-if="info.city">
+            <i class="icon fa fa-road "></i> 
+            <span ng-bind="info.city"></span>
+
+          </label>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+
+
+

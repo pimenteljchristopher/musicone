@@ -1,0 +1,637 @@
+/* Empty. Add your own CSS if you like */
+
+html,body { 
+  height:100%;
+ }
+
+/*Menu*/
+.musicone-menuTab {
+ background-color: #1a1a1a !important;
+
+}
+.musicone-menuTab a, ion-item{
+  border: 0px   !important;
+ text-decoration: none !important; 
+ background-color: #1a1a1a !important;
+ color: white !important;
+ border-spacing: 0px;
+
+}
+.musicone-menuTab h2{
+  border: 0px   !important;
+ text-decoration: none !important; 
+ background-color: #1a1a1a !important;
+ color: white !important;
+ border-spacing: 0px;
+ font-size: 12px !important; 
+
+}
+.item-complex .item-content, .item-radio .item-content{
+  background-color: #1a1a1a !important;
+}
+
+
+/*Menu*/
+/*Logo start*/
+#signhomeLogo{
+  padding-top: 100px;
+ height: 100%;
+ width: 100%;
+}
+#signhomeLogo img{
+  display: block;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  height: 150px;
+  width: 150px;
+  margin: 30px auto 0;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+  opacity: 1;
+}
+#signhomeLogo p{
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+ color:black;
+ font-size: 35px;
+/* background-color: #d9d9d9;*/
+ height: 40px;
+ font-weight: bold;
+
+}
+
+/*Logo end*/
+.signhome {
+   font-family: "Open Sans", sans-serif, Serif;
+
+ }
+ .signhome img{
+    width: 100%;
+   height: 100%;
+    background-color: #cccccc;
+     opacity: .6;
+ }
+ .signhome div{
+  padding-left: 10px;
+  padding-right: 10px;
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+ }
+.signhome button{
+   border:none; height:50px; padding:0; border-radius:3px; margin:0 0 10px; display:inline-block; font-family: 'Open Sans', sans-serif; text-transform:uppercase; color:#fff; font-weight:500; font-size:15px;
+ }
+.signhome button.activated, .signhome button:hover{color:#fff; }
+.signhome button.button-login{background:#ca0088;}
+.signhome button.button-register{background:#0095da;}
+.signhome button.button-login.activated{background: #860059;}
+.signhome button.button-register.activated{background: #00608b;}
+.signhome .item-input span{color: #ffffff; }
+.signhome .item-input input[type="text"],input[type="password"]{ color:black !important; background-color: #fff !important;}
+.signhome div.button-forget{ text-align: center; color: black; padding-top: 10px; padding-bottom: 50px; text-decoration: underline;}
+/*signin*/
+.signin  { 
+  margin-top: 60%;
+  padding: 15px; 
+  
+}
+
+.signin div.button-forget{
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+}
+.signin button{
+   border:none; height:50px; padding:0; border-radius:3px; margin:0 0 10px; display:inline-block; font-family: 'Open Sans', sans-serif; text-transform:uppercase; color:#fff; font-weight:500; font-size:15px;
+ }
+.signin button.activated, .signin button:hover{color:#fff; }
+.signin button.button-login{background:#ca0088; }
+
+/*signin*/
+  
+
+
+/*forget*/
+
+
+.signforget{
+  margin-top: 70%;
+  padding: 15px;
+}
+.signforget div.button-forget{
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+}
+.signforget button{
+   border:none; height:50px; padding:0; border-radius:3px; margin:0 0 10px; display:inline-block; font-family: 'Open Sans', sans-serif; text-transform:uppercase; color:#fff; font-weight:500; font-size:15px;
+ }
+.signforget button.activated, .signforget button:hover{color:#fff; }
+.signforget button.button-forget{background:#ca0088; }
+/*forget*/ 
+
+
+
+/*signup*/
+.signup {
+  font-weight: none;
+  padding: 20px;
+}
+.signup div.button-cancel {
+  text-align: center;
+  text-decoration: underline;
+}
+ #birthdate{
+  
+  width: 100%;
+
+  background-color: red;
+ }
+  #birthdate div{
+  padding: 5% 0 5% 0;
+
+ }
+/*signup*/
+
+/*Login Design */
+.LoginPages{
+  padding-top: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.LoginBackground .scroll {height: 100%;}
+
+/*Profile Style*/
+.ProfilePage{
+  padding: 10px;
+}
+.ProfilePage label{
+   font-weight: normal !important ;
+  color: #292828;
+  font-size: 15px;
+}
+.ProfilePage input[type="text"]{
+  
+  padding-left:15px;
+  font-size: 15px; 
+  border: 1px solid #13dfcf;
+  border-radius: 5px;
+  padding: 15px;
+ }
+.ProfilePage input[type="text"]:focus{
+    border: 1px solid ;
+    font-size: 20px; 
+    border-radius: 5px;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:white;
+    border-bottom-color: #ff0000;
+}
+
+
+#profile-bg {
+        position: fixed;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        height: 170px;
+       
+        background: url('../img/wallpaper.jpg') no-repeat transparent;
+        background-size: 100%;
+        background-position: 50% 20%;
+
+        text-align: center;
+      }
+
+      #content {
+        position: relative;
+        margin-top: 150px;
+        background-color: white;
+        box-shadow: 0px -1px 10px rgba(0,0,0,0.4);
+        padding-top: 200px;
+      }
+
+      #profile-info {
+        position: absolute;
+        top: -100px;
+        width: 100%;
+        z-index: 2;
+        text-align: center;
+      }
+      #profile-name {
+        color: #444;
+        font-size: 26px;
+      }
+      #profile-description {
+        font-size: 15px;
+        color: #888;
+      }
+      #profile-description a {
+        color: #888;
+      }
+
+      #profile-image {
+        display: block;
+        border-radius: 100px;
+        border: 1px solid #fff;
+        width: 128px;
+        height: 128px;
+        margin: 30px auto 0;
+        box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+      }
+   
+
+      .list-item-content {
+        padding: 5px;
+      }
+
+      .list-item {
+        color: #666666;
+      }
+
+      .post {
+        color: #444;
+      }
+
+      .post-time {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 11px;
+        color: #888;
+      }
+
+      .post-profile-image {
+        display: inline-block;
+        vertical-align: top;
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+      }
+      .post-options {
+        position: absolute;
+        font-size: 16px;
+        right: 5px;
+        bottom: 5px;
+        color: #888;
+      }
+
+
+/*Profile Style*/
+.adic-modal .modal {
+    min-height: 0 !important;
+}
+
+.adic-popup {
+    width: 90%;
+    height: 60%;
+    top: 20%;
+    bottom: 20%;
+    right: 5%;
+    left: 5%;
+     min-height: 0;
+    background-color: #ffffff;
+}
+
+
+
+.slideLogin{
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+.musicone-top_player{
+  width: 100% !important;
+  height: 105px !important;
+}
+.musicone-top_player div{
+  width: 100% !important;
+    text-align: center;
+}
+
+ #musicone-time{
+  
+   float: right;
+   font-size: 15px;
+}
+
+#musicone-top_play{
+     color: #fff;
+     font-size: 30px;
+     padding: 5px;
+     border-radius: 100px;
+     background: #00ffff;
+     min-width: 50px;
+     width: 50px;
+}
+progress[value] {
+
+  -webkit-appearance: none;
+   appearance: none;
+  width: 250px;
+  height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+
+  background-image:
+     -webkit-linear-gradient(-45deg, 
+                             transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                             rgba(0,0, 0, .1) 66%, transparent 66%),
+     -webkit-linear-gradient(top, 
+                             rgba(255, 255, 255, .25), 
+                             rgba(0, 0, 0, .25)),
+     -webkit-linear-gradient(left, #09c, #f44);
+
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+
+
+
+#image-data-coverphoto{
+  top: 0px !important;
+  left: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.musicone .background{
+    background: #11c1f3 !important;
+    border: 0px solid !important;
+}
+  .musicone .header{
+  	  border: 0px solid !important;
+  }
+
+  .musicone .button-tab{
+    
+     text-align: center !important;
+     margin: auto !important;
+     width: 100% !important;
+     font-size: 25px !important;
+     border: 0px solid !important;
+  }
+  .musicone .button-tab i{
+     margin-left: 25px !important;
+     margin-right: 25px !important;
+  }
+  .musicone-search div{
+    font-size: 12px !important;
+  }
+  .musicone-search img{
+     border-radius: 15px;
+  }
+  .musicone-notFound {
+    content:url('../img/notfound.png');
+    border: 0px solid black;
+   /* background-image: url('../img/notfound.png');*/
+ /*  background-size: 100% 100%;
+   background-repeat: no-repeat;*/
+  }
+  .musicone .time{
+      border: 0px solid !important;
+  	width: 100% !important;
+  }
+  .musicone .left{
+    float:left;
+  }
+  .musicone .right{
+  	float: right;
+  }
+
+  .musicone-searchbar{
+    padding: 0px !important;
+    width:100%;
+    font-weight: normal;
+  }
+    .musicone-searchbar input{
+    padding-left: 10px !important;
+    width:100%;
+    font-weight: normal;
+  }
+  .musicone-searchlist{
+    top:80px !important;
+  }
+
+
+  /*Page*/
+
+  #musicone-info,ion-header-bar{
+      background: #11c1f3 !important;
+      border:0px solid !important;
+      color: black !important;
+  }
+ #musicone-info_player {
+  text-align: center;
+  background: #fff;
+  width: 100%;
+ 
+ }
+  #musicone-info_sub{
+     color:#fff;
+     font-size: 40px;
+     padding: 10px;
+     padding-left: 25px;
+     padding-right: 25px;
+      background: #e6005b;
+      border-radius: 50px;
+      bottom: 0px;
+  }
+  #musicone-info_play {
+     margin-left: 10px;
+     margin-right: 10px;
+    color: #fff;
+     font-size: 50px;
+     padding: 10px;
+       border-radius: 60px;
+     background: #11c1f3;
+     min-width: 70px;
+     width: 70px;
+  }
+
+
+
+/*favorite*/
+.favorite-player{
+ 
+  bottom:20px;
+  position: absolute;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.favorite-buttons{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #11c1f3;
+  text-align: center;
+  
+}
+#favorite-button-backward,#favorite-button-forward,#favorite-button-play{
+   font-size: 50px !important;
+   color: white;
+   border:1px solid #0d9ac2;
+   background-color: #086079;
+   padding: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border-radius: 50%;
+   min-width: 25%;
+}
+
+
+/*tinder cards*/
+td-cards {
+  display: block;
+}
+
+td-card {
+  position: absolute;
+  left: 50%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: -150px;
+  width: 300px;
+  height: 300px;
+
+  border: 1px solid #999;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 6px;
+}
+
+td-card .image {
+  position: relative;
+}
+
+td-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.yes-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: rgb(111, 250, 111);
+  opacity: 0;
+}
+.no-text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: rgb(255, 115, 115);
+  opacity: 0;
+}
+
+.fade {
+  -webkit-transition: 0.2s opacity linear;
+  transition: 0.2s opacity linear;
+  opacity: 0;
+}
+/* Splash page stylings */
+.splash-page {
+  background:url(/img/splash-bkg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.splash-page .card {
+  margin-top:40px;
+}
+
+.splash-page .logo h1 {
+  margin-top:30px;
+  text-align:center;
+  color:#fff !important;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight:bold;
+  letter-spacing: -3px;
+  font-size:42px;
+}
+
+.splash-page .signup-opt {
+  color:#fff;
+  padding:15px;
+  margin-top:20px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.splash-page .action-button {
+  font-weight: bolder;
+}
+
+/* Discover page stylings */
+.discover-page {
+
+}
+
+.discover-page .current-song {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+
+  -webkit-transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.1s;
+  transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.1s;
+}
+
+.discover-page .current-song .item-image {
+  max-height:300px;
+  overflow:hidden;
+}
+
+@media screen and (max-height: 600px) {
+  .discover-page .current-song .item-image {
+    max-height:200px;
+    overflow:hidden;
+  }
+}
+
+.discover-page .current-song.favorited.ng-hide {
+  -webkit-transform: translateX(1000px) rotate(50deg);
+  -ms-transform: translateX(1000px) rotate(50deg);
+  transform: translateX(1000px) rotate(50deg);
+  opacity:0;
+}
+
+.discover-page .current-song.skipped.ng-hide {
+  -webkit-transform: translateX(-1000px) rotate(-50deg);
+  -ms-transform: translateX(-1000px) rotate(-50deg);
+  transform: translateX(-1000px) rotate(-50deg);
+  opacity:0;
+}
+
+.discover-page .current-song.ng-hide-add {
+  -webkit-transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.3s;
+  transition:all cubic-bezier(0.420, 0.000, 1.000, 1.000) 0.3s;
+  display:block!important;
+}
+
+.discover-page .current-song.ng-hide-remove {
+  -webkit-transform: scale(0.7) translateX(0px) rotate(0deg);
+  -ms-transform: scale(0.7) translateX(0px) rotate(0deg);
+  transform: scale(0.7) translateX(0px) rotate(0deg);
+  opacity: 0;
+}
+
+
+.discover-page .img-lookahead img {
+  height:1px;
+  width:1px;
+  opacity:0.01;
+}
+
+
+
+
+

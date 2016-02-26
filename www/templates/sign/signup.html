@@ -1,0 +1,56 @@
+
+<ion-nav-view>
+
+  <ion-content >
+    <form class="signup" name="signup" >
+      <div class="list ">
+
+        <label class="item item-icon-left">
+           <i class="icon ion-person"></i> 
+          <input type="text" ng-model="registerData.username" autofocus placeholder="Username" required>
+        </label>
+        <label class="item item-icon-left">
+          <i class="icon ion-locked"></i> 
+          <input type="password" ng-model="registerData.password" placeholder="Password" required>
+        </label>
+         <label class="item item-icon-left">
+            <i class="icon ion-email"></i> 
+          <input type="email" ng-model="registerData.email" placeholder="Email" required>
+        </label>
+       
+        <label class="item item-icon-left">
+          <i class="icon ion-man"></i> 
+          <input type="text" ng-model="registerData.name" placeholder="Name" required>
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Gender
+          </div>
+             <i class="icon " ng-class="{'ion-male': registerData.gender == 'Male' ,'ion-female': registerData.gender == 'Female'}"></i> 
+          <select ng-model="registerData.gender">
+            <option >Male</option>
+            <option >Female</option>
+          </select>
+        </label>
+
+        <item id="birthdate"> 
+        <div>
+            <label class="item item-input">
+              <span class="input-label">Birthdate</span>
+              <input type="date" ng-model="registerData.birthdate" required>
+            </label>
+          
+     <!--        <p class="input-group"> 
+              <input type="text" class="form-control" uib-datepicker-popup="{{format}}"  is-open="popup1.opened" min-date="minDate" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" required />
+              <span class="input-group-btn">
+                <button type="button"  class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+              </span>
+            </p> -->
+          </div>
+        </item>
+         <button type="submit" class="button button-block  ion-checkmark-circled button-calm"  ng-disabled="signup.$invalid" ng-click="doJoin()">Sign up</button>
+         <div class="button-cancel" ui-sref="signhome">Cancel</div>
+      </div>
+    </form>
+  </ion-content>
+</ion-nav-view>
